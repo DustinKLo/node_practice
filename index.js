@@ -32,7 +32,7 @@ const server = http.createServer((req, res) => {
   let extname = path.extname(filePath);
 
   // // content type
-  let contentType = 'text/html'
+  let contentType; // string
 
   // check ext and set content type
   switch (extname) {
